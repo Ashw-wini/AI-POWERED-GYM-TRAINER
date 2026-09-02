@@ -1,0 +1,30 @@
+# Downloaded model assets and source videos can be large.
+models/*.task
+data/trainer_videos/*
+!data/trainer_videos/.gitkeep
+
+# Generated landmark data.
+data/landmarks/*
+!data/landmarks/.gitkeep
+data/processed/features/*
+!data/processed/features/.gitkeep
+data/processed/reps/*
+!data/processed/reps/.gitkeep
+data/references/*
+!data/references/.gitkeep
+
+# Python cache files.
+__pycache__/
+*.py[cod]
+
+# Local Python runtime and virtual environment.
+.python/
+.venv/
+.cache/
+
+# One-time setup downloads and diagnostic logs.
+python-3.12.6-*.exe
+python-3.12.6-*.zip
+get-pip.py
+python-install*.log
+pip-install.log
